@@ -1,16 +1,21 @@
-import geopy, shelve
+import geopy, shelve, time
 import folium as mark
 from geopy.geocoders import Nominatim
+from datetime import datetime
 from style import *
 
 data = shelve.open("adr.suffix")
-addrs = data["addrs"][:50]
+addrs = data["addrs"][:5]
 Apartments = data["Apartments"]
 
 USERAGENT = 'https://www.google.com'
 
-# popups = ['Описание', 'lorem ipsum', 'Ещё описание']
-# tooltips = ['First, tooltip, Yartsevskaya Ulitsa, 21']
+# start time
+start_time = datetime.now()
+
+def toFixed(f: float, n=0):
+    a, b = str(f).split('.')
+    return '{}.{}{}'.format(a, b[:n], '0'*(n-len(b)))
 
 geolocator = Nominatim(timeout=10, user_agent = f"{USERAGENT}")
 
@@ -21,7 +26,7 @@ x = 0
 y = 0
 for i in range(len(addrs)):
     y+=1
-    print(f'{x}/{y}')
+    print(f'Установлено меток: {x}/{y}')
     location = geolocator.geocode(addrs[i])
     try:
         if "к." in addrs[i]:
@@ -35,3 +40,5 @@ for i in range(len(addrs)):
 
 map.save('index.html')
 sty()
+work_time = datetime.now() - start_time
+print(f'Время работы скрипта: {toFixed(work_time, 2)}')
