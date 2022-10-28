@@ -2,7 +2,7 @@
 
 ### Algorithm for the optimal placement of 10 thousand postomats throughout Moscow created by the [MoscowTone](https://lk.leaders2022.innoagency.ru/teams/3) team.
 
-### HOW TO INSTALL
+### HOW TO USE
 ```bash
 git clone https://github.com/MowcowTone/POSTOMAT_MAP_GENERATOR
 cd POSTOMAT_MAP_GENERATOR
