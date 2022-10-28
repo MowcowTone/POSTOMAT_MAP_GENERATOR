@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_06e334f9d4d589c30417f084469b9384 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+</head>
+<body>    
+    
+            <div class="folium-map" id="map_06e334f9d4d589c30417f084469b9384" ></div>
+        
+</body>
+<script>    
+    
+            var map_06e334f9d4d589c30417f084469b9384 = L.map(
+                "map_06e334f9d4d589c30417f084469b9384",
+                {
+                    center: [55.749877, 37.624368],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 10,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_4942554970b44b873ee43a6341a208a3 = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_06e334f9d4d589c30417f084469b9384);
+        
+    
+            var marker_d0409cb6c4b3cb0880ef10ac58a85f57 = L.marker(
+                [55.8015549, 37.5199048],
+                {}
+            ).addTo(map_06e334f9d4d589c30417f084469b9384);
+        
+    
+        var popup_cecb46c7f949275ecafb10d6bb43ef33 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_7455a94d59e5f2a58d9cdb94261d0cee = $(`<div id="html_7455a94d59e5f2a58d9cdb94261d0cee" style="width: 100.0%; height: 100.0%;">кол-во квартир:992</div>`)[0];
+                popup_cecb46c7f949275ecafb10d6bb43ef33.setContent(html_7455a94d59e5f2a58d9cdb94261d0cee);
+            
+        
+
+        marker_d0409cb6c4b3cb0880ef10ac58a85f57.bindPopup(popup_cecb46c7f949275ecafb10d6bb43ef33)
+        ;
+
+        
+    
+    
+            marker_d0409cb6c4b3cb0880ef10ac58a85f57.bindTooltip(
+                `<div>
+                     пер. Чапаевский, д. 3, Москва
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_893577178bde65f3627f20a31c007caa = L.marker(
+                [55.7268918, 37.5360095],
+                {}
+            ).addTo(map_06e334f9d4d589c30417f084469b9384);
+        
+    
+        var popup_ae81f342a5dc74b8000093cdad5b78d7 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_0895ee1419f7f284f8b67b47de966ec7 = $(`<div id="html_0895ee1419f7f284f8b67b47de966ec7" style="width: 100.0%; height: 100.0%;">кол-во квартир:564</div>`)[0];
+                popup_ae81f342a5dc74b8000093cdad5b78d7.setContent(html_0895ee1419f7f284f8b67b47de966ec7);
+            
+        
+
+        marker_893577178bde65f3627f20a31c007caa.bindPopup(popup_ae81f342a5dc74b8000093cdad5b78d7)
+        ;
+
+        
+    
+    
+            marker_893577178bde65f3627f20a31c007caa.bindTooltip(
+                `<div>
+                     ул. Мосфильмовская, д. 8, Москва
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_bfac8cc0288de81a43f8558e5155730f = L.marker(
+                [55.7107478, 37.5069694],
+                {}
+            ).addTo(map_06e334f9d4d589c30417f084469b9384);
+        
+    
+        var popup_8d341bd3e38d6010b8fcdb1be304ff39 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_1cec13c13699109abdcedc18d857b02c = $(`<div id="html_1cec13c13699109abdcedc18d857b02c" style="width: 100.0%; height: 100.0%;">кол-во квартир:1046</div>`)[0];
+                popup_8d341bd3e38d6010b8fcdb1be304ff39.setContent(html_1cec13c13699109abdcedc18d857b02c);
+            
+        
+
+        marker_bfac8cc0288de81a43f8558e5155730f.bindPopup(popup_8d341bd3e38d6010b8fcdb1be304ff39)
+        ;
+
+        
+    
+    
+            marker_bfac8cc0288de81a43f8558e5155730f.bindTooltip(
+                `<div>
+                     ул. Мосфильмовская, д. 70, Москва
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_de0a11d14589cdc17041f69d9ef2eaca = L.marker(
+                [55.5801697, 37.6701841],
+                {}
+            ).addTo(map_06e334f9d4d589c30417f084469b9384);
+        
+    
+        var popup_181c9ea8ee5ebfe15f25266d0125f124 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_fc68dde81fb51c032c9d1f6919f4b160 = $(`<div id="html_fc68dde81fb51c032c9d1f6919f4b160" style="width: 100.0%; height: 100.0%;">кол-во квартир:2570</div>`)[0];
+                popup_181c9ea8ee5ebfe15f25266d0125f124.setContent(html_fc68dde81fb51c032c9d1f6919f4b160);
+            
+        
+
+        marker_de0a11d14589cdc17041f69d9ef2eaca.bindPopup(popup_181c9ea8ee5ebfe15f25266d0125f124)
+        ;
+
+        
+    
+    
+            marker_de0a11d14589cdc17041f69d9ef2eaca.bindTooltip(
+                `<div>
+                     ул. Михневская, д. 8, Москва
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_eddcd6962478cc902e2f13c75c13a996 = L.marker(
+                [55.7289023, 37.4931506],
+                {}
+            ).addTo(map_06e334f9d4d589c30417f084469b9384);
+        
+    
+        var popup_cd7f2a77074eb6d573291f1a26012d55 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_61a7a61a67e2af7ab0d9d144c1167778 = $(`<div id="html_61a7a61a67e2af7ab0d9d144c1167778" style="width: 100.0%; height: 100.0%;">кол-во квартир:459</div>`)[0];
+                popup_cd7f2a77074eb6d573291f1a26012d55.setContent(html_61a7a61a67e2af7ab0d9d144c1167778);
+            
+        
+
+        marker_eddcd6962478cc902e2f13c75c13a996.bindPopup(popup_cd7f2a77074eb6d573291f1a26012d55)
+        ;
+
+        
+    
+    
+            marker_eddcd6962478cc902e2f13c75c13a996.bindTooltip(
+                `<div>
+                     ул. Минская, д. 2, Москва
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_552677f5c8b1626c6d52552901519820 = L.marker(
+                [55.7825065, 37.6721639],
+                {}
+            ).addTo(map_06e334f9d4d589c30417f084469b9384);
+        
+    
+        var popup_d85e456513eba2cd6a9c3b8db484350a = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_62b0dd1b696cfd3dcd1c868ddc49b465 = $(`<div id="html_62b0dd1b696cfd3dcd1c868ddc49b465" style="width: 100.0%; height: 100.0%;">кол-во квартир:492</div>`)[0];
+                popup_d85e456513eba2cd6a9c3b8db484350a.setContent(html_62b0dd1b696cfd3dcd1c868ddc49b465);
+            
+        
+
+        marker_552677f5c8b1626c6d52552901519820.bindPopup(popup_d85e456513eba2cd6a9c3b8db484350a)
+        ;
+
+        
+    
+    
+            marker_552677f5c8b1626c6d52552901519820.bindTooltip(
+                `<div>
+                     ул. Русаковская, д. 31, Москва
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_1fb30dd6dc8e181842cd156d70ab51a3 = L.marker(
+                [55.8096234, 37.4540169],
+                {}
+            ).addTo(map_06e334f9d4d589c30417f084469b9384);
+        
+    
+        var popup_09bdda2be3279555ce9aa01e7e5504ad = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_8e9f3b3dc8f00dc7c95a4fead01d7706 = $(`<div id="html_8e9f3b3dc8f00dc7c95a4fead01d7706" style="width: 100.0%; height: 100.0%;">кол-во квартир:504</div>`)[0];
+                popup_09bdda2be3279555ce9aa01e7e5504ad.setContent(html_8e9f3b3dc8f00dc7c95a4fead01d7706);
+            
+        
+
+        marker_1fb30dd6dc8e181842cd156d70ab51a3.bindPopup(popup_09bdda2be3279555ce9aa01e7e5504ad)
+        ;
+
+        
+    
+    
+            marker_1fb30dd6dc8e181842cd156d70ab51a3.bindTooltip(
+                `<div>
+                     ул. Авиационная, д. 79, Москва
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_d2e5ff63c6971a638c4822a61aae8647 = L.marker(
+                [55.7107478, 37.5069694],
+                {}
+            ).addTo(map_06e334f9d4d589c30417f084469b9384);
+        
+    
+        var popup_8ad313a4d1904d32aeeff5fed9f98eda = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_5fa5e3b09cc14ce859a32715ee5304d9 = $(`<div id="html_5fa5e3b09cc14ce859a32715ee5304d9" style="width: 100.0%; height: 100.0%;">кол-во квартир:211</div>`)[0];
+                popup_8ad313a4d1904d32aeeff5fed9f98eda.setContent(html_5fa5e3b09cc14ce859a32715ee5304d9);
+            
+        
+
+        marker_d2e5ff63c6971a638c4822a61aae8647.bindPopup(popup_8ad313a4d1904d32aeeff5fed9f98eda)
+        ;
+
+        
+    
+    
+            marker_d2e5ff63c6971a638c4822a61aae8647.bindTooltip(
+                `<div>
+                     ул. Мосфильмовская, д. 55, Москва
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_48b426dbb37c24b81c0c15a33d74cc1e = L.marker(
+                [55.3580698, 37.5335888],
+                {}
+            ).addTo(map_06e334f9d4d589c30417f084469b9384);
+        
+    
+        var popup_005d98213a61f20ec44dc7e7f833fa66 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_13d7d1e80e23ce0ab8e1b066008459c3 = $(`<div id="html_13d7d1e80e23ce0ab8e1b066008459c3" style="width: 100.0%; height: 100.0%;">кол-во квартир:1133</div>`)[0];
+                popup_005d98213a61f20ec44dc7e7f833fa66.setContent(html_13d7d1e80e23ce0ab8e1b066008459c3);
+            
+        
+
+        marker_48b426dbb37c24b81c0c15a33d74cc1e.bindPopup(popup_005d98213a61f20ec44dc7e7f833fa66)
+        ;
+
+        
+    
+    
+            marker_48b426dbb37c24b81c0c15a33d74cc1e.bindTooltip(
+                `<div>
+                     ул. Первомайская, д. 42., Москва
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_a0a783ffaafbd91ad9bfed5371ef94be = L.marker(
+                [55.8680726, 37.4743578],
+                {}
+            ).addTo(map_06e334f9d4d589c30417f084469b9384);
+        
+    
+        var popup_33b35122e7fa871301dcb890feef06a1 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_a078c56e4b6aafa903b8e69c9af4d375 = $(`<div id="html_a078c56e4b6aafa903b8e69c9af4d375" style="width: 100.0%; height: 100.0%;">кол-во квартир:496</div>`)[0];
+                popup_33b35122e7fa871301dcb890feef06a1.setContent(html_a078c56e4b6aafa903b8e69c9af4d375);
+            
+        
+
+        marker_a0a783ffaafbd91ad9bfed5371ef94be.bindPopup(popup_33b35122e7fa871301dcb890feef06a1)
+        ;
+
+        
+    
+    
+            marker_a0a783ffaafbd91ad9bfed5371ef94be.bindTooltip(
+                `<div>
+                     ул. Смольная, д. 49, Москва
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_0034973755d329182c0c0d20a4b0a6b7 = L.marker(
+                [55.8096234, 37.4540169],
+                {}
+            ).addTo(map_06e334f9d4d589c30417f084469b9384);
+        
+    
+        var popup_e6430b85c107e9394b0fe5b3350dc377 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_054bc1d5cd7b20378c487494adeb6349 = $(`<div id="html_054bc1d5cd7b20378c487494adeb6349" style="width: 100.0%; height: 100.0%;">кол-во квартир:391</div>`)[0];
+                popup_e6430b85c107e9394b0fe5b3350dc377.setContent(html_054bc1d5cd7b20378c487494adeb6349);
+            
+        
+
+        marker_0034973755d329182c0c0d20a4b0a6b7.bindPopup(popup_e6430b85c107e9394b0fe5b3350dc377)
+        ;
+
+        
+    
+    
+            marker_0034973755d329182c0c0d20a4b0a6b7.bindTooltip(
+                `<div>
+                     ул. Авиационная, д. 66, Москва
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_dd107da30e64647e7d7cc955277a46c5 = L.marker(
+                [55.8096234, 37.4540169],
+                {}
+            ).addTo(map_06e334f9d4d589c30417f084469b9384);
+        
+    
+        var popup_e68eab5538df1f6e5239f1b6bef0f24e = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_4608690b760c86cc7ae2f64ee67e9b6b = $(`<div id="html_4608690b760c86cc7ae2f64ee67e9b6b" style="width: 100.0%; height: 100.0%;">кол-во квартир:284</div>`)[0];
+                popup_e68eab5538df1f6e5239f1b6bef0f24e.setContent(html_4608690b760c86cc7ae2f64ee67e9b6b);
+            
+        
+
+        marker_dd107da30e64647e7d7cc955277a46c5.bindPopup(popup_e68eab5538df1f6e5239f1b6bef0f24e)
+        ;
+
+        
+    
+    
+            marker_dd107da30e64647e7d7cc955277a46c5.bindTooltip(
+                `<div>
+                     ул. Авиационная, д. 77, Москва
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_0c108a4d4daef19b1a6ab2d4214c736c = L.marker(
+                [55.7561656, 37.4173836],
+                {}
+            ).addTo(map_06e334f9d4d589c30417f084469b9384);
+        
+    
+        var popup_9eeaf0912554d3473e085dc74995de35 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_1819598e50b7523fb6f156ef222199cc = $(`<div id="html_1819598e50b7523fb6f156ef222199cc" style="width: 100.0%; height: 100.0%;">кол-во квартир:268</div>`)[0];
+                popup_9eeaf0912554d3473e085dc74995de35.setContent(html_1819598e50b7523fb6f156ef222199cc);
+            
+        
+
+        marker_0c108a4d4daef19b1a6ab2d4214c736c.bindPopup(popup_9eeaf0912554d3473e085dc74995de35)
+        ;
+
+        
+    
+    
+            marker_0c108a4d4daef19b1a6ab2d4214c736c.bindTooltip(
+                `<div>
+                     ул. Крылатские Холмы, д. 37, Москва
+                 </div>`,
+                {"sticky": true}
+            );
+        
+</script>
