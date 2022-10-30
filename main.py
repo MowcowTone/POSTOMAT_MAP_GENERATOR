@@ -5,7 +5,7 @@ from datetime import datetime
 from style import *
 
 data = shelve.open("adr.suffix")
-addrs = data["addrs"][:5]
+addrs = data["addrs"][:50]
 Apartments = data["Apartments"]
 
 USERAGENT = 'https://www.google.com'
@@ -26,7 +26,7 @@ x = 0
 y = 0
 for i in range(len(addrs)):
     y+=1
-    print(f'Установлено меток: {x}/{y}')
+    # print(f'Установлено меток: {x}/{y}')
     location = geolocator.geocode(addrs[i])
     try:
         if "к." in addrs[i]:
@@ -35,6 +35,7 @@ for i in range(len(addrs)):
             mark.Marker([location.latitude, location.longitude], popup=f'кол-во квартир:{Apartments[i]}', tooltip=addrs[i]).add_to(map)
 
         x+=1
+        print([location.latitude, location.longitude])
     except:
         ...
 

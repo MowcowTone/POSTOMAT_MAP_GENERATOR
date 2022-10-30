@@ -1,2 +1,3 @@
 venv
-__pyvache__
+__pycache__
+*.txt

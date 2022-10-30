@@ -1,8 +1,8 @@
 from dannie import *
 import shelve
 data = shelve.open("adr.suffix")
-file_name = 'R_homes_v10.xlsx'
-x = dan(file_name)
+file_nameascii = 'R_homes_v10.xlsx'
+x = dan(file_nameascii)
 x.read()
 print(len(x.adres))
 mat=0
