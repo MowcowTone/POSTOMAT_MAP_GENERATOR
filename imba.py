@@ -16,7 +16,7 @@ cities = geopandas.read_file(
 
 states_sorted = states.sort_values(by="density", ascending=False)
 
-# states_sorted.head(5).append(states_sorted.tail(5))[["name", "density"]]
+states_sorted.head(5).append(states_sorted.tail(5))[["name", "density"]]
 
 def rd2(x):
     return round(x, 2)
@@ -40,10 +40,10 @@ colormap = branca.colormap.LinearColormap(
 
 colormap.caption = "Population Density in the United States"
 
-# us_cities = geopandas.sjoin(cities, states, how="inner", predicate="within")
-mo_cities = geopandas.sjoin(states, states, how="inner", predicate="within")
+us_cities = geopandas.sjoin(cities, states, how="inner", predicate="within")
+# mo_cities = geopandas.sjoin(states, states, how="inner", predicate="within")
 
-pop_ranked_cities = mo_cities.sort_values(by="pop_max", ascending=False)[
+pop_ranked_cities = us_cities.sort_values(by="pop_max", ascending=False)[
     ["nameascii", "pop_max", "geometry"]
 ].iloc[:20]
 
