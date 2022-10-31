@@ -40,9 +40,10 @@ colormap = branca.colormap.LinearColormap(
 
 colormap.caption = "Population Density in the United States"
 
-us_cities = geopandas.sjoin(cities, states, how="inner", predicate="within")
+# us_cities = geopandas.sjoin(cities, states, how="inner", predicate="within")
+mo_cities = geopandas.sjoin(states, states, how="inner", predicate="within")
 
-pop_ranked_cities = us_cities.sort_values(by="pop_max", ascending=False)[
+pop_ranked_cities = mo_cities.sort_values(by="pop_max", ascending=False)[
     ["nameascii", "pop_max", "geometry"]
 ].iloc[:20]
 
