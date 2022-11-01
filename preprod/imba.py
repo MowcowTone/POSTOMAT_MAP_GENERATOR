@@ -4,9 +4,9 @@ from folium.plugins import Search
 
 states = geopandas.read_file(
     # "https://raw.githubusercontent.com/PublicaMundi/MappingAPI/master/data/geojson/us-states.json",
-    "datalist.json",
+    # "datalist.json",
     # "square.json",
-    # "test.json",
+    "test.json",
     driver="GeoJSON",
 )
 

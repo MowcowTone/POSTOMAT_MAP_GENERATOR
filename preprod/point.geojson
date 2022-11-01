@@ -1,0 +1,50 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "scalerank": 4,
+        "natscale": 50,
+        "labelrank": 1,
+        "nameascii": "Indianapolis",
+        "nameasciipar": null,
+        "nameasciialt": null,
+        "diffascii": 0,
+        "nameasciiascii": "Indianapolis",
+        "adm0cap": 0,
+        "capalt": 0,
+        "capin": null,
+        "worldcity": 0,
+        "megacity": 1,
+        "sov0nameascii": "United States",
+        "sov_a3": "USA",
+        "adm0nameascii": "United States of America",
+        "adm0_a3": "USA",
+        "adm1nameascii": "Indiana",
+        "iso_a2": "US",
+        "note": null,
+        "latitude": 39.7499884227,
+        "longitude": -86.1700480568,
+        "changed": 0,
+        "nameasciidiff": 0,
+        "diffnote": null,
+        "pop_max": 1436000,
+        "pop_min": 773283,
+        "pop_other": 1167415,
+        "rank_max": 12,
+        "rank_min": 11,
+        "geonameasciiid": 4259418,
+        "meganameascii": "Indianapolis",
+        "ls_nameascii": "Indianapolis",
+        "ls_match": 1,
+        "checkme": 0,
+        "featureclass": "Admin-1 capital"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [37.01, 56.005]
+      }
+    }
+  ]
+}

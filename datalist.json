@@ -1,0 +1,27 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "id": "01",
+      "properties": {
+        "name": "Square",
+        "density": 1,
+        "pop_min": 610892
+      },
+      "geometry": {
+        "type": "MultiPolygon",
+        "coordinates": [
+          [
+            [
+              [37.03, 56.015],
+              [37.03, 56.0],
+              [37.0, 56.0],
+              [37.0, 56.015]
+            ]
+          ]
+        ]
+      }
+    }
+  ]
+}

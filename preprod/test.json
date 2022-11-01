@@ -1,0 +1,23 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "id": "25",
+      "properties": { "name": "name", "density": 20, "pop_min": 30 },
+      "geometry": {
+        "type": "MultiPolygon",
+        "coordinates": [
+          [
+            [
+              [37.03, 56.015],
+              [37.03, 56.0],
+              [37.0, 56.0],
+              [37.0, 56.015]
+            ]
+          ]
+        ]
+      }
+    }
+  ]
+}
